@@ -1,18 +1,15 @@
-/* Estilos responsivos para a página de início */
-
-/* Estilos base para dispositivos mobile (até 768px) */
-@media screen and (max-width: 768px) {
+/* Estilos base para dispositivos mobile (Estilo: iPhone X, iPhone 12, 13, 14) */
+@media screen and (max-width: 480px) {
   body {
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    margin-top: 2vh !important;
-    margin-bottom: 2vh !important;
+    overflow-y: auto !important;
+    height: auto !important;
+    margin: 2vh 0 2vh 0 !important;
   }
+
   /* Ajustes no container principal */
   #inicio-container {
     width: 100vw !important;
-    height: 95px !important;
+    height: auto !important;
     min-height: 100vh !important;
     padding: 1rem !important;
     overflow-y: auto !important;
@@ -30,7 +27,7 @@
   }
   
   .left-section h1 {
-    font-size: 2.5rem !important;
+    font-size: 3rem !important;
     width: 100% !important;
     margin-top: 1rem !important;
   }
@@ -56,30 +53,31 @@
     position: relative !important;
     right: auto !important;
     bottom: auto !important;
-    width: 100% !important;
+    width: 100vw !important;
     margin: 2rem 0 !important;
   }
   
   /* Ajustes no texto da direita */
   .right-text {
-    position: relative !important;
-    right: auto !important;
-    bottom: 5.5vh !important;
-    width: 100% !important;
-    margin: 1.7rem 0 3rem 0 !important;
+    position: static !important;
+    width: 90vw !important;
+    margin: 0 !important;
     text-align: right !important;
   }
 
   .red-line-2 {
-    right: 4vw !important;
-    bottom: -1.3vh !important;
-    width: 90% !important;
+    position: static !important;
+    width: 10vw !important;
+    bottom: 0px !important;
+    margin-left: 2rem !important;
+    margin-bottom: 0rem !important;
   }
   
   /* Ajustes na estrutura flex */
   .content-flex {
     flex-direction: column !important;
     align-items: flex-start !important;
+    height: auto !important;
   }
   
   /* Ajustes nos ícones sociais */

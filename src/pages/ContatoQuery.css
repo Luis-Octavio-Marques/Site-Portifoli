@@ -1,10 +1,8 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   body {
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    margin-top: 2vh !important;
-    margin-bottom: 2vh !important;
+    overflow-y: auto !important;
+    height: auto !important;
+    margin: 2vh 0 2vh 0 !important;
   }
 
   #contato-container {
