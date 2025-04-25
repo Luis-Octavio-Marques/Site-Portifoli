@@ -1,0 +1,31 @@
+@media screen and (max-width: 768px) {
+  body {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-top: 2vh !important;
+    margin-bottom: 2vh !important;
+    overflow: hidden !important;
+  }
+
+  #portifolio-container {
+    width: 100vw !important;
+    height: auto !important;
+    min-height: 100vh !important;
+    overflow: hidden !important;
+  }
+
+  .web-title {
+    font-size: 2.5rem !important;
+    width: 100% !important;
+    margin-top: 1rem !important;
+  }
+
+  .web-description {
+    font-size: 1.2rem !important;
+    margin-right: 1.5rem !important;
+    margin-left: 1.5rem !important;
+    width: 100% !important;
+    margin-bottom: 1rem !important;
+  }
+}

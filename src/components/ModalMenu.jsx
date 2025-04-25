@@ -27,7 +27,8 @@ const ModalMenu = () => {
   };
 
   const links = {
-    link: "block relative border-b border-white/20 pb-2 overflow-hidden group",
+    link: 
+      "block relative border-b border-white/20 pb-2 overflow-hidden group",
 
     span_primary:
       "inline-block transform transition-transform duration-300 group-hover:-translate-y-1",
@@ -81,12 +82,13 @@ const ModalMenu = () => {
                   <span className={links.span_primary}>Contato</span>
                   <span className={links.span_secundary}></span>
                 </Link>
+
+                <button className="close-button" onClick={handleCloseModal}>
+                  <X size={24} />
+                </button>
               </div>
 
               {/* Botão fechar */}
-              <button className="close-button" onClick={handleCloseModal}>
-                <X size={24} />
-              </button>
             </nav>
           </div>
         </div>

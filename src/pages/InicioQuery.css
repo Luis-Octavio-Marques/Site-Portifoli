@@ -1,0 +1,96 @@
+/* Estilos responsivos para a página de início */
+
+/* Estilos base para dispositivos mobile (até 768px) */
+@media screen and (max-width: 768px) {
+  body {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-top: 2vh !important;
+    margin-bottom: 2vh !important;
+  }
+  /* Ajustes no container principal */
+  #inicio-container {
+    width: 100vw !important;
+    height: 95px !important;
+    min-height: 100vh !important;
+    padding: 1rem !important;
+    overflow-y: auto !important;
+  }
+  
+  /* Ajustes na seção da esquerda */
+  .left-section {
+    width: 100% !important;
+    margin-top: 1rem !important;
+  }
+
+  .red-line-1 {
+    width: 60% !important;
+    margin-top: 1vh !important;
+  }
+  
+  .left-section h1 {
+    font-size: 2.5rem !important;
+    width: 100% !important;
+    margin-top: 1rem !important;
+  }
+
+  .left-section p {
+    font-size: .9rem !important;
+    width: 100% !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  .left-text {
+    width: 100% !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  /* Esconda a imagem de perfil em dispositivos móveis */
+  .image-section {
+    display: none !important;
+  }
+  
+  /* Ajustes na seção da direita */
+  .right-section {
+    position: relative !important;
+    right: auto !important;
+    bottom: auto !important;
+    width: 100% !important;
+    margin: 2rem 0 !important;
+  }
+  
+  /* Ajustes no texto da direita */
+  .right-text {
+    position: relative !important;
+    right: auto !important;
+    bottom: 5.5vh !important;
+    width: 100% !important;
+    margin: 1.7rem 0 3rem 0 !important;
+    text-align: right !important;
+  }
+
+  .red-line-2 {
+    right: 4vw !important;
+    bottom: -1.3vh !important;
+    width: 90% !important;
+  }
+  
+  /* Ajustes na estrutura flex */
+  .content-flex {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+  
+  /* Ajustes nos ícones sociais */
+  .social-icons {
+    margin-bottom: 2rem !important;
+  }
+}
+
+/* Ajustes para telas muito pequenas */
+@media screen and (max-width: 480px) {
+  .left-section h1 {
+    font-size: 2rem !important;
+  }
+}

@@ -1,0 +1,36 @@
+@media screen and (max-width: 768px) {
+  body {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-top: 2vh !important;
+    margin-bottom: 2vh !important;
+  }
+
+  #contato-container {
+    width: 100vw !important;
+    height: auto !important;
+    min-height: 100vh !important;
+    margin-top: 0 !important;
+  }
+
+  .red-line {
+    width: 58% !important;
+    top: 13.5vh !important;
+  }
+
+  .form-container {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  h1 {
+    font-size: 1.7rem !important;
+    width: 100% !important;
+    margin-top: 1.7rem !important;
+  }
+
+  textarea {
+    height: 90px !important;
+  }
+}

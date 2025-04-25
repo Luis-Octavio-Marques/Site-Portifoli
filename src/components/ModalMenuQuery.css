@@ -1,6 +1,6 @@
 /* Estilos para o botão do menu */
 .menu-button {
-  position: absolute;
+  position: fixed;
   top: 5%;
   left: 50%;
   transform: translateX(-50%);
@@ -8,7 +8,7 @@
   background-color: #333;
   border: 1px solid white;
   color: white;
-  padding: 0.5rem 1rem;
+  padding: .7rem 1.7rem;
   border-radius: 9999px;
   backdrop-filter: blur(4px);
   transition: transform 0.3s ease;
@@ -35,7 +35,7 @@
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   padding-bottom: 1.25rem;
   scroll-behavior: smooth;
-  font-size: 1.1rem;
+  font-size: clamp(0.9rem, 1.5vw, 1.1rem);
 }
 
 /* Estilos para esconder a barra de rolagem mas manter funcionalidade */
@@ -89,7 +89,7 @@
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   padding-top: 1rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   width: 100%;
   padding-left: 1rem;
@@ -99,74 +99,54 @@
 
 .nav-links {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  gap: 2rem;
 }
 
 /* Botão de fechar */
 .close-button {
-  position: absolute;
-  top: 0.5rem;
-  right: 0.5rem;
   border-radius: 9999px;
   color: white;
 }
 
-/* Media queries para responsividade */
-@media (min-width: 640px) {
+@media (max-width: 768px) {
+  /* Botão vai pra direita */
   .menu-button {
-    padding: 0.75rem 1.5rem;
+    top: 5%;
+    left: auto;
+    right: 1rem;
+    transform: none;
   }
-  
+
+  .menu-button:hover {
+    transform: scale(1.1);
+  }
+
+  .modal-container {
+    left: 0;
+    transform: none;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 1rem 20px;
+    border-radius: 0;
+  }
+
+  /* Conteúdo do modal ocupa toda a largura e os filhos ficam lado a lado */
+  .modal-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  /* Navegação lado a lado */
   .nav-links {
     flex-direction: row;
-    gap: 1.5rem;
-  }
-  
-  .close-button {
-    position: static;
-    margin-left: 1.5rem;
-  }
-}
-
-@media (min-width: 768px) {
-  .menu-button {
-    padding: 0.75rem 2rem;
-  }
-  
-  .modal-content {
-    margin-top: 2.5rem;
-  }
-  
-  .modal-nav {
-    padding-top: 1.5rem;
-  }
-  
-  .nav-links {
-    gap: 2rem;
-  }
-  
-  .close-button {
-    margin-left: 2rem;
-  }
-  
-  .close-button svg {
-    width: 28px;
-    height: 28px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .menu-button {
-    padding: 0.75rem 2rem;
-  }
-  
-  .nav-links {
-    gap: 3rem;
-  }
-  
-  .close-button svg {
-    width: 32px;
-    height: 32px;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
   }
 }

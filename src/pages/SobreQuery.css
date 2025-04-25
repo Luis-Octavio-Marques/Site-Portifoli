@@ -1,0 +1,84 @@
+@media screen and (max-width: 768px) {
+  body {
+    overflow-y: auto !important;
+    height: auto !important;
+  }
+
+  #sobre-container {
+    width: 100vw !important;
+    height: auto !important;
+    min-height: 100vh !important;
+    overflow-y: auto !important;
+    padding-bottom: 3rem !important;
+  }
+
+  .about-container {
+    width: 100vw !important;
+    height: auto !important;
+    min-height: 100vh !important;
+    margin-top: 5vh !important;
+  }
+
+  .about-title {
+    margin-top: 0rem !important;
+    font-size: 2rem !important;
+  }
+
+  .red-line-1 {
+    width: 45% !important;
+    margin-top: 1rem !important;
+  }
+
+  .about-text {
+    font-size: 1rem !important;
+    width: 92vw !important;
+    margin-bottom: 0rem !important;
+  }
+
+  .red-line-2 {
+    width: 90% !important;
+    margin-top: 1rem !important;
+  }
+
+  .technical-title {
+    font-size: 2rem !important;
+    margin-top: 0rem !important;
+    margin-bottom: 0.2rem !important;
+  }
+
+  .technology-container {
+    width: 90vw !important;
+    height: auto !important;
+    margin-top: 1rem !important;
+    margin-bottom: 2rem !important;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .frameworks-container {
+    width: 90vw !important;
+    height: auto !important;
+    margin-top: 1rem !important;
+    margin-bottom: 2rem !important;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .course-container {
+    position: static !important;
+    bottom: -10vh !important;
+  }
+
+  .red-line-3 {
+    width: 90% !important;
+  }
+
+  .course-card {
+    width: 90vw !important;
+    height: auto !important;
+    margin-top: 1rem !important;
+    margin-bottom: 2rem !important;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

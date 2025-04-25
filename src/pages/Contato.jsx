@@ -1,5 +1,6 @@
 import { Send, Mail, User } from "lucide-react";
 import ModalMenu from "../components/ModalMenu";
+import "./ContatoQuery.css"; // Importe o arquivo CSS criado
 
 function Contato() {
   const handleSubmit = (e) => {
@@ -26,14 +27,15 @@ function Contato() {
   };
 
   return (
-    <div className="w-[95vw] h-[95vh] bg-[url('/public/img/background-div.png')] bg-cover bg-center rounded-[20px] p-10 text-white">
+    <>
+    <div id="contato-container" className="w-[95vw] h-[95vh] bg-[url('/public/img/background-div.png')] bg-cover bg-center rounded-[20px] p-10 text-white contact-container">
       <ModalMenu />
       <h1 className="absolute left-[11.5vw] top-6 font-gantari mt-5 text-[2.5em] font-bold">
         {" "}
         Entre em Contato{" "}
       </h1>
-      <div className="absolute left-[11.5vw] top-[16.3vh] w-[25vw] h-[1px] bg-red-500 mt-0"></div>
-      <div className="max-w-5xl mx-auto mt-16">
+      <div className="absolute left-[11.5vw] top-[16.3vh] w-[25vw] h-[1px] bg-red-500 mt-0 red-line"></div>
+      <div className="max-w-5xl mx-auto mt-16 form-container">
         <div className="bg-transparent backdrop-blur-lg p-8 rounded-lg border border-white shadow-md">
           <h3 className="text-2xl font-semibold mb-6">Envie uma Mensagem</h3>
 
@@ -74,7 +76,7 @@ function Contato() {
               </div>
             </div>
 
-            <div className="mb-6">
+            <div className="mb-6 message">
               <label
                 htmlFor="message"
                 className="block text-sm font-medium mb-1"
@@ -101,6 +103,7 @@ function Contato() {
         </div>
       </div>
     </div>
+    </>
   );
 }
 
