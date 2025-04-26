@@ -110,7 +110,7 @@
   color: white;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   /* Botão vai pra direita */
   .menu-button {
     top: 5%;
@@ -147,6 +147,22 @@
     gap: 1rem;
     justify-content: center;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 320px) {
+  /* Ajustes para telas muito pequenas */
+  .modal-container {
+    padding: 0 0.5rem 20px;
+  }
+
+  .modal-content {
+    gap: 0.25rem;
+  }
+
+  .nav-links {
+    gap: 0.5rem;
+    font-size: 1rem;
   }
 }
