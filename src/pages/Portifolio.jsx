@@ -14,7 +14,7 @@ import "swiper/css/effect-cards";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Link } from "react-router-dom";
-import "./PortifolioQuery.css"; // Importe o arquivo CSS criado
+import "./Portifolio.css"; // Importe o arquivo CSS criado
 
 const images = [
   {
@@ -53,9 +53,7 @@ function Portifolio() {
     <>
       <ModalMenu />
       <div
-        id="portifolio-container"
-        className="w-[95vw] h-[95vh] overflow-visible bg-[url('/public/img/background-div.png')] bg-cover bg-center rounded-[20px]"
-      >
+        className="portifolio-container">
         <Swiper
           effect={"coverflow"}
           grabCursor={true}
@@ -74,19 +72,18 @@ function Portifolio() {
           }}
           speed={1500}
           modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
-          className="overflow-visible w-[95vw] h-[95vh] rounded-[50px] relative left-[5.3vw] bottom-[-15vh]"
+          className="swiper-slider"
         >
           {images.map((images, index) => (
             <SwiperSlide key={index} className="rounded-[50px]">
               <div
                 style={{ backgroundImage: `url(${images.src})` }}
-                className="w-[85vw] h-[75vh] rounded-[50px] object-cover bg-center bg-cover align-middle hover:scale-105 transition-transform duration-300"
-              >
-                <div className="flex flex-col items-center justify-center text-center bg-black w-full h-full rounded-[50px] bg-opacity-50">
-                  <h1 className="text-white text-5xl font-bold web-title">
+                className="image-slide">
+                <div className="web-container">
+                  <h1 className="web-title">
                     {images.title}
                   </h1>
-                  <p className="mb-3 mt-2 text-white text-[1.1em] web-description">
+                  <p className="web-description">
                     {" "}
                     {images.description}{" "}
                   </p>
@@ -96,7 +93,7 @@ function Portifolio() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <button className="bg-red-500 text-white text-2xl px-8 py-3 rounded-md hover:bg-red-600 transition duration-300 font-oswald">
+                      <button className="web-button">
                         Visitar o Site
                       </button>
                     </Link>

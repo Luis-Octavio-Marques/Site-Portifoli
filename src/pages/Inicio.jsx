@@ -1,7 +1,7 @@
 import React from "react";
 import { useState, useRef } from "react";
 import ModalMenu from "../components/ModalMenu";
-import "./InicioQuery.css"; // Importe o arquivo CSS criado
+import "./Inicio.css"; // Importe o arquivo CSS criado
 
 function Inicio() {
   const [showTooltip, setShowTooltip] = useState(false);
@@ -32,30 +32,14 @@ function Inicio() {
 
   return (
     <>
-      <div
-        id="inicio-container"
-        style={{
-          backgroundImage: `url(/img/background-div.png)`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          width: "95vw",
-          height: "95vh",
-        }}
-        className="rounded-[20px] relative overflow-hidden px-10"
-      >
+      <div className="inicio-container">
         <ModalMenu />
-        <div className="h-full flex justify-between items-baseline text-white content-flex">
+        <div className="content-flex">
           <div className="left-section">
-            <div className="w-[25vw] max-w-screen h-[1px] bg-red-500 mt-20 red-line-1"></div>
-            <h1 className="font-gantari mt-5 text-6xl font-bold w-screen">
-              {" "}
-              Luís Octávio
-            </h1>
-            <p className="mb-8 text-gray-200 ">
-              {" "}
-              Desenvolvedor Front-End Junior
-            </p>
-            <p className="w-[30vw] font-sans font-extralight left-text">
+            <h1 className="left-title"> Luís Octávio</h1>
+            <p className="left-description"> Desenvolvedor Front-End Junior</p>
+            <div className="red-line-start-1"></div>
+            <p className="left-text">
               {" "}
               Sou um desenvolvedor front-end júnior dando os primeiros passos no
               universo da programação. Tenho me dedicado a transformar ideias em
@@ -67,11 +51,11 @@ function Inicio() {
               demonstram minha evolução técnica e compromisso com resultados de
               qualidade.{" "}
             </p>
-            <div className="flex items-center gap-5 mt-5 social-icons">
-              <div className="relative flex items-center justify-center group">
+            <div className="social-icons">
+              <div className="icons-images-container">
                 <button onClick={copiarEmail}>
                   <img
-                    className="w-10 hover:scale-125 transition-all duration-300 ease-in-out"
+                    className="icon-image"
                     src="/img/gmail-icon.png"
                     alt="Copiar e-mail"
                   />
@@ -90,7 +74,7 @@ function Inicio() {
                 rel="noreferrer"
               >
                 <img
-                  className="w-10 hover:scale-125 transition-all duration-300 ease-in-out"
+                  className="icon-image"
                   src="/img/instagram-icon.png"
                   alt="Instagram"
                 />
@@ -102,7 +86,7 @@ function Inicio() {
                 rel="noreferrer"
               >
                 <img
-                  className="w-10 hover:scale-125 transition-all duration-300 ease-in-out"
+                  className="icon-image"
                   src="/img/linkedin-icon.png"
                   alt="LinkedIn"
                 />
@@ -110,30 +94,31 @@ function Inicio() {
             </div>
           </div>
           <div
-            className="absolute top-[15vh] left-[37%] image-section"
+            className="image-section"
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
             ref={imgRef}
           >
             <img
-              id="foto-perfil"
-              className="w-[25vw] transition-transform duration-300 ease-out profile-image"
+              className="profile-image"
               src="/img/picture-example.png"
-              alt="Homem"
+              alt="Foto de Perfil"
               style={{ transform: transformStyle }}
             />
           </div>
-          <p className="absolute right-[6vw] bottom-10 w-[25vw] font-sans text-base font-extralight mb-5 right-text">
-            {" "}
-            Estou começando na área de programação e venho aprendendo o básico
-            de front-end, e me tornando mais experiente em algumas linguagens
-            como HTML, CSS e um pouco de JavaScript. Gosto de brincar com
-            layouts, testar efeitos visuais e aprender como deixar os sites mais
-            bonitos e fáceis de usar. Cada projeto é uma chance de descobrir
-            algo novo e me divertir enquanto aprendo. Para saber mais, clique na
-            aba de "Sobre mim" no botão acima{" "}
-          </p>
-          <div className="absolute right-[6vw] bottom-8 flex items-end w-[25vw] h-[1px] bg-red-500 my-4 red-line-2"></div>
+          <div className="right-section">
+            <p className="right-text">
+              {" "}
+              Estou começando na área de programação e venho aprendendo o básico
+              de front-end, e me tornando mais experiente em algumas linguagens
+              como HTML, CSS e um pouco de JavaScript. Gosto de brincar com
+              layouts, testar efeitos visuais e aprender como deixar os sites
+              mais bonitos e fáceis de usar. Cada projeto é uma chance de
+              descobrir algo novo e me divertir enquanto aprendo. Para saber
+              mais, clique na aba de "Sobre mim" no botão acima{" "}
+            </p>
+            <div className="red-line-start-2"></div>
+          </div>
         </div>
       </div>
     </>

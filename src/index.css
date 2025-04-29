@@ -26,6 +26,19 @@ body {
   overflow: hidden;
 }
 
+@media (max-width: 600px) {
+  body {
+    overflow-y: auto;
+    height: auto;
+  }
+}
+
+@media (max-width: 950px) and (orientation: landscape) {
+  body {
+    overflow-y: auto;
+    height: auto;
+  }
+}
 /* Utilidades */
 
 @layer utilities {
