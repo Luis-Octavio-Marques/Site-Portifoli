@@ -101,7 +101,7 @@ function Inicio() {
           >
             <img
               className="profile-image"
-              src="/img/profile-image.png"
+              src="/img/imagem-perfil.png"
               alt="Foto de Perfil"
               style={{ transform: transformStyle }}
             />
