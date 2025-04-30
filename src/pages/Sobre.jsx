@@ -42,10 +42,7 @@ function Sobre() {
           </p>
           <div className="red-line-about-2"></div>
           <div>
-            <h3 className="technical-title">
-              {" "}
-              Habilidades Técnicas{" "}
-            </h3>
+            <h3 className="technical-title"> Habilidades </h3>
             <div>
               <p className="technology-tools"> Tecnologias e Ferramentas </p>
               <div className="technology-container">
@@ -54,50 +51,40 @@ function Sobre() {
                   {" "}
                   HTML{" "}
                 </p>
-                <p
-                  style={abilityStyle}
-                  className="css">
+                <p style={abilityStyle} className="css">
                   {" "}
                   CSS{" "}
                 </p>
-                <p
-                  style={abilityStyle}
-                  className="javascript">
+                <p style={abilityStyle} className="javascript">
                   {" "}
                   JavaScript{" "}
                 </p>
-                <p
-                  style={abilityStyle}
-                  className="vite">
+                <p style={abilityStyle} className="vite">
                   {" "}
                   Vite{" "}
                 </p>
-                <p
-                  style={abilityStyle}
-                  className="git-github">
+                <p style={abilityStyle} className="git-github">
                   {" "}
                   Git/GitHub{" "}
                 </p>
+                <p style={abilityStyle} className="soft-skills">
+                  {" "}
+                  Soft Skills {" "}
+                </p>{" "}
               </div>
             </div>
             <div>
               <p className="library-frameworks"> Bibliotecas & Frameworks </p>
               <div className="frameworks-container">
-                <p
-                  style={abilityStyle}
-                  className="react-js">
+                <p style={abilityStyle} className="react-js">
                   {" "}
                   React.js{" "}
                 </p>
-                <p
-                  style={abilityStyle}
-                  className="react-router">
+                <p style={abilityStyle} className="react-router">
                   {" "}
                   React Router{" "}
                 </p>
-                <p
-                  style={abilityStyle}
-                  className="styled-components">
+                <p style={abilityStyle} className="styled-components">
                   {" "}
                   Styled Components{" "}
                 </p>
@@ -106,10 +93,7 @@ function Sobre() {
           </div>
         </div>
         <div className="course-container">
-          <h1 className="course-accomplished">
-            {" "}
-            Cursos Realizados{" "}
-          </h1>
+          <h1 className="course-accomplished"> Cursos Realizados </h1>
           {cursos.map((curso, index) => (
             <div key={index} className="course-box">
               <div className="red-line-about-3"></div>
@@ -117,30 +101,13 @@ function Sobre() {
                 <p className="course-title">
                   {curso.title} | {curso.provider}
                 </p>
-                <p className="course-project">
-                  Projeto: {curso.project}
-                </p>
+                <p className="course-project">Projeto: {curso.project}</p>
                 <div className="course-skills">
-                  <p className="skill">
-                    {" "}
-                    HTML{" "}
-                  </p>
-                  <p className="skill">
-                    {" "}
-                    CSS{" "}
-                  </p>
-                  <p className="skill">
-                    {" "}
-                    React{" "}
-                  </p>
-                  <p className="skill">
-                    {" "}
-                    Express{" "}
-                  </p>
-                  <p className="skill">
-                    {" "}
-                    Node{" "}
-                  </p>
+                  <p className="skill"> HTML </p>
+                  <p className="skill"> CSS </p>
+                  <p className="skill"> React </p>
+                  <p className="skill"> Express </p>
+                  <p className="skill"> Node </p>
                 </div>
               </div>
             </div>
