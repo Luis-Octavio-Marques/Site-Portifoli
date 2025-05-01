@@ -111,7 +111,7 @@ function Inicio() {
               {" "}
               Estou começando na área de programação e venho aprendendo o básico
               de front-end, e me tornando mais experiente em algumas linguagens
-              como HTML, CSS e um pouco de JavaScript. Gosto de experimentar novos
+              como HTML, CSS e um pouco de JavaScript. Gosto de brincar com
               layouts, testar efeitos visuais e aprender como deixar os sites
               mais bonitos e fáceis de usar. Cada projeto é uma chance de
               descobrir algo novo e me divertir enquanto aprendo. Para saber

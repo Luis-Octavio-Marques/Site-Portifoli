@@ -26,11 +26,12 @@ const images = [
     link: "https://site-previsao-tempo-tau.vercel.app",
   },
   {
-    title: "Vago para Site",
+    title: "Player de Música",
     button: "Mais Detalhes",
-    src: "/img/image-vago.png",
-    description: "Projeto em desenvolvimento para oportunidades futuras.",
-    link: "#",
+    src: "/img/image-web2.png",
+    description:
+      "Um replica do player do Spotify com algumas músicas de gosto pessoal.",
+    link: "https://loquacious-dodol-918a40.netlify.app",
   },
   {
     title: "Vago para Site",
@@ -52,8 +53,7 @@ function Portifolio() {
   return (
     <>
       <ModalMenu />
-      <div
-        className="portifolio-container">
+      <div className="portifolio-container">
         <Swiper
           effect={"coverflow"}
           grabCursor={true}
@@ -78,24 +78,18 @@ function Portifolio() {
             <SwiperSlide key={index} className="rounded-[50px]">
               <div
                 style={{ backgroundImage: `url(${images.src})` }}
-                className="image-slide">
+                className="image-slide"
+              >
                 <div className="web-container">
-                  <h1 className="web-title">
-                    {images.title}
-                  </h1>
-                  <p className="web-description">
-                    {" "}
-                    {images.description}{" "}
-                  </p>
+                  <h1 className="web-title">{images.title}</h1>
+                  <p className="web-description"> {images.description} </p>
                   <div>
                     <Link
                       to={images.link}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <button className="web-button">
-                        Visitar o Site
-                      </button>
+                      <button className="web-button">Visitar o Site</button>
                     </Link>
                   </div>
                 </div>
