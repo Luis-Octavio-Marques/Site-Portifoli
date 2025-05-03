@@ -32,7 +32,7 @@ const images = [
     link: "https://loquacious-dodol-918a40.netlify.app",
   },
   {
-    title: "Vago para Site",
+    title: "Pedra, Papel e Tesoura",
     src: "/img/image-web3.png",
     description: "Jogo clássico do Pedra Papel Tesoura, onde você desafia o computador e sua inteligência.",
     link: "https://luis-octavio-marques.github.io/Site-Pedra-Papel-Tesoura/",
