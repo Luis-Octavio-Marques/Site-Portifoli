@@ -19,7 +19,6 @@ import "./Portifolio.css"; // Importe o arquivo CSS criado
 const images = [
   {
     title: "Site de Previsão do Tempo",
-    button: "Mais Detalhes",
     src: "/img/image-web1.png",
     description:
       "Um site que mostra o clima em tempo real de qualquer lugar do mundo.",
@@ -27,7 +26,6 @@ const images = [
   },
   {
     title: "Player de Música",
-    button: "Mais Detalhes",
     src: "/img/image-web2.png",
     description:
       "Um replica do player do Spotify com algumas músicas de gosto pessoal.",
@@ -35,14 +33,12 @@ const images = [
   },
   {
     title: "Vago para Site",
-    button: "Mais Detalhes",
-    src: "/img/image-vago.png",
-    description: "Projeto em desenvolvimento para oportunidades futuras.",
-    link: "#",
+    src: "/img/image-web3.png",
+    description: "Jogo clássico do Pedra Papel Tesoura, onde você desafia o computador e sua inteligência.",
+    link: "https://luis-octavio-marques.github.io/Site-Pedra-Papel-Tesoura/",
   },
   {
     title: "Vago para Site",
-    button: "Mais Detalhes",
     src: "/img/image-vago.png",
     description: "Projeto em desenvolvimento para oportunidades futuras.",
     link: "#",
