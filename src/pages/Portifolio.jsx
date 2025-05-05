@@ -38,10 +38,10 @@ const images = [
     link: "https://luis-octavio-marques.github.io/Site-Pedra-Papel-Tesoura/",
   },
   {
-    title: "Vago para Site",
-    src: "/img/image-vago.png",
-    description: "Projeto em desenvolvimento para oportunidades futuras.",
-    link: "#",
+    title: "Jogo da Velha",
+    src: "/img/image-web4.png",
+    description: "O famoso Jogo da Velha para desafiar e se divertir com seu amigo.",
+    link: "https://luis-octavio-marques.github.io/Site-Jogo-da-Velha/",
   },
 ];
 
